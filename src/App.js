@@ -28,16 +28,6 @@ console.log(personState);
 };
 
 
-const switchNameHandler2 = () => {
-  setPersonState({
-    person: [
-      {name: 'Nirgun', age: '28'},
-      {name: 'Pooja', age: '30'},
-      {name: 'anushree', age: '26'}
-    ]
-  });
-};
-
 
 const namechangeHandler = (event) => {
   setPersonState({
@@ -49,13 +39,12 @@ const namechangeHandler = (event) => {
   });
 };
 
+
   return (
     <div className="App">
-      <h1>Hi, i'm a react app</h1>
-      <p>This is really working</p> 
+      <h1 className="text">Hi, i'm a react app</h1>
       <div className='button'>
-      <button onClick={switchNameHandler.bind(this, 'NIRGUN')}> Switch </button>
-      <button onClick={switchNameHandler2}> prev </button>
+      <button className="text" onClick={switchNameHandler.bind(this, 'NIRGUN')}> Switch </button>
       </div>
       <Person name={personState.person[0].name} age={personState.person[0].age}/>
       <Person name={personState.person[1].name} age={personState.person[1].age} 
