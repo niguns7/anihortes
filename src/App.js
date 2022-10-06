@@ -42,7 +42,7 @@ const namechangeHandler = (event) => {
   });
 };
 
-//used useState react hook
+
   return (
     <div className="App">
       <h1 className="text">Hi, i'm a react app</h1>
